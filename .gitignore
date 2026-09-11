@@ -1,2 +1,42 @@
+# Model files (too large for GitHub)
 Model.keras
+Model_weights.weights.h5
+
+# Dataset CSV files
 *.csv
+traindata.csv
+train.csv
+
+# Large model binaries (TFLite - downloaded automatically)
+models/landmarks_classifier_*.tflite
+
+# CLIP ONNX model (large binary, downloaded automatically)
+models/clip/model_quantized.onnx
+
+# Generated label files (re-generated from script)
+landmark_labels.json
+classes.npy
+
+# Frontend dependencies
+frontend/node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Test scratch files
+test_pisa.jpg
+test_red_fort.jpg
+pisa_labels.txt
+
+# Test scripts
+test_*.py
+find_pisa*.py
+test_multi.py
+test_clip.py
+
+# Temp / scratch
+untitled.txt
+"Untitled Folder"/
