@@ -571,6 +571,20 @@
   gap: 8px;
 }
 
+/* City / Country line under best match name */
+.best-match-location {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+/* Engine description text */
+.engine-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
 /* Footer */
 .app-footer {
   margin-top: 48px;
