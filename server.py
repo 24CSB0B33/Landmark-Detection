@@ -162,13 +162,13 @@ def predict_clip(pil_img: Image.Image):
         lm = clip_db[idx]
         prob_pct = round(float(probs[idx]) * 100.0, 2)
         results.append({
-            "rank": rank,
-            "landmark_id": idx,
+            "rank": int(rank),
+            "landmark_id": int(idx),
             "name": lm["name"],
             "city": lm.get("city", ""),
             "country": lm.get("country", ""),
             "region": lm.get("region", ""),
-            "probability": prob_pct,
+            "probability": float(prob_pct),
             "confidence_formatted": f"{prob_pct:.2f}%"
         })
     return results
