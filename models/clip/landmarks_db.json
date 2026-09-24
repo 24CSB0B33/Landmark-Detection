@@ -54,6 +54,108 @@
     "region": "Europe"
   },
   {
+    "name": "Rialto Bridge",
+    "city": "Venice",
+    "country": "Italy",
+    "region": "Europe"
+  },
+  {
+    "name": "Roman Forum",
+    "city": "Rome",
+    "country": "Italy",
+    "region": "Europe"
+  },
+  {
+    "name": "Pompeii Archaeological Ruins",
+    "city": "Pompeii",
+    "country": "Italy",
+    "region": "Europe"
+  },
+  {
+    "name": "St. Peter's Basilica",
+    "city": "Vatican City",
+    "country": "Vatican City",
+    "region": "Europe"
+  },
+  {
+    "name": "Sistine Chapel",
+    "city": "Vatican City",
+    "country": "Vatican City",
+    "region": "Europe"
+  },
+  {
+    "name": "Sagrada Familia",
+    "city": "Barcelona",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "name": "Park Guell",
+    "city": "Barcelona",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "name": "Alhambra",
+    "city": "Granada",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "name": "Royal Palace of Madrid",
+    "city": "Madrid",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "name": "Plaza de Espana",
+    "city": "Seville",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "name": "Seville Cathedral and Giralda",
+    "city": "Seville",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "name": "Pena Palace",
+    "city": "Sintra",
+    "country": "Portugal",
+    "region": "Europe"
+  },
+  {
+    "name": "Belem Tower",
+    "city": "Lisbon",
+    "country": "Portugal",
+    "region": "Europe"
+  },
+  {
+    "name": "Parthenon / Acropolis of Athens",
+    "city": "Athens",
+    "country": "Greece",
+    "region": "Europe"
+  },
+  {
+    "name": "Santorini Caldera & White Villages",
+    "city": "Santorini",
+    "country": "Greece",
+    "region": "Europe"
+  },
+  {
+    "name": "Meteora Monasteries",
+    "city": "Kalabaka",
+    "country": "Greece",
+    "region": "Europe"
+  },
+  {
+    "name": "Dubrovnik Old Town Walls",
+    "city": "Dubrovnik",
+    "country": "Croatia",
+    "region": "Europe"
+  },
+  {
     "name": "Eiffel Tower",
     "city": "Paris",
     "country": "France",
@@ -96,6 +198,12 @@
     "region": "Europe"
   },
   {
+    "name": "Sainte-Chapelle",
+    "city": "Paris",
+    "country": "France",
+    "region": "Europe"
+  },
+  {
     "name": "Big Ben / Elizabeth Tower",
     "city": "London",
     "country": "United Kingdom",
@@ -103,6 +211,12 @@
   },
   {
     "name": "Tower Bridge",
+    "city": "London",
+    "country": "United Kingdom",
+    "region": "Europe"
+  },
+  {
+    "name": "Tower of London",
     "city": "London",
     "country": "United Kingdom",
     "region": "Europe"
@@ -132,33 +246,27 @@
     "region": "Europe"
   },
   {
+    "name": "Houses of Parliament",
+    "city": "London",
+    "country": "United Kingdom",
+    "region": "Europe"
+  },
+  {
     "name": "Edinburgh Castle",
     "city": "Edinburgh",
     "country": "United Kingdom",
     "region": "Europe"
   },
   {
-    "name": "Sagrada Familia",
-    "city": "Barcelona",
-    "country": "Spain",
+    "name": "Cliffs of Moher",
+    "city": "County Clare",
+    "country": "Ireland",
     "region": "Europe"
   },
   {
-    "name": "Park Guell",
-    "city": "Barcelona",
-    "country": "Spain",
-    "region": "Europe"
-  },
-  {
-    "name": "Alhambra",
-    "city": "Granada",
-    "country": "Spain",
-    "region": "Europe"
-  },
-  {
-    "name": "Royal Palace of Madrid",
-    "city": "Madrid",
-    "country": "Spain",
+    "name": "Giant's Causeway",
+    "city": "Bushmills",
+    "country": "United Kingdom",
     "region": "Europe"
   },
   {
@@ -183,60 +291,6 @@
     "name": "Reichstag Building",
     "city": "Berlin",
     "country": "Germany",
-    "region": "Europe"
-  },
-  {
-    "name": "Parthenon / Acropolis of Athens",
-    "city": "Athens",
-    "country": "Greece",
-    "region": "Europe"
-  },
-  {
-    "name": "Santorini Caldera & White Villages",
-    "city": "Santorini",
-    "country": "Greece",
-    "region": "Europe"
-  },
-  {
-    "name": "Meteora Monasteries",
-    "city": "Kalabaka",
-    "country": "Greece",
-    "region": "Europe"
-  },
-  {
-    "name": "St. Peter's Basilica",
-    "city": "Vatican City",
-    "country": "Vatican",
-    "region": "Europe"
-  },
-  {
-    "name": "Sistine Chapel",
-    "city": "Vatican City",
-    "country": "Vatican",
-    "region": "Europe"
-  },
-  {
-    "name": "Saint Basil's Cathedral",
-    "city": "Moscow",
-    "country": "Russia",
-    "region": "Europe"
-  },
-  {
-    "name": "Moscow Kremlin",
-    "city": "Moscow",
-    "country": "Russia",
-    "region": "Europe"
-  },
-  {
-    "name": "Hermitage Museum / Winter Palace",
-    "city": "Saint Petersburg",
-    "country": "Russia",
-    "region": "Europe"
-  },
-  {
-    "name": "Church of the Savior on Spilled Blood",
-    "city": "Saint Petersburg",
-    "country": "Russia",
     "region": "Europe"
   },
   {
@@ -276,14 +330,44 @@
     "region": "Europe"
   },
   {
-    "name": "Red Fort",
-    "city": "Delhi",
-    "country": "India",
-    "region": "Asia"
+    "name": "Bran Castle (Dracula's Castle)",
+    "city": "Bran",
+    "country": "Romania",
+    "region": "Europe"
+  },
+  {
+    "name": "Saint Basil's Cathedral",
+    "city": "Moscow",
+    "country": "Russia",
+    "region": "Europe"
+  },
+  {
+    "name": "Moscow Kremlin",
+    "city": "Moscow",
+    "country": "Russia",
+    "region": "Europe"
+  },
+  {
+    "name": "Hermitage Museum / Winter Palace",
+    "city": "Saint Petersburg",
+    "country": "Russia",
+    "region": "Europe"
+  },
+  {
+    "name": "Church of the Savior on Spilled Blood",
+    "city": "Saint Petersburg",
+    "country": "Russia",
+    "region": "Europe"
   },
   {
     "name": "Taj Mahal",
     "city": "Agra",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Red Fort",
+    "city": "Delhi",
     "country": "India",
     "region": "Asia"
   },
@@ -300,8 +384,62 @@
     "region": "Asia"
   },
   {
+    "name": "Humayun's Tomb",
+    "city": "Delhi",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Lotus Temple",
+    "city": "Delhi",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Akshardham Temple",
+    "city": "New Delhi",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Rashtrapati Bhavan",
+    "city": "New Delhi",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Jama Masjid",
+    "city": "Delhi",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
     "name": "Gateway of India",
     "city": "Mumbai",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Chhatrapati Shivaji Maharaj Terminus",
+    "city": "Mumbai",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Elephanta Caves",
+    "city": "Mumbai",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Ajanta and Ellora Caves",
+    "city": "Aurangabad",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Shaniwar Wada",
+    "city": "Pune",
     "country": "India",
     "region": "Asia"
   },
@@ -318,32 +456,98 @@
     "region": "Asia"
   },
   {
-    "name": "Charminar",
-    "city": "Hyderabad",
-    "country": "India",
-    "region": "Asia"
-  },
-  {
-    "name": "Lotus Temple",
-    "city": "Delhi",
-    "country": "India",
-    "region": "Asia"
-  },
-  {
-    "name": "Konark Sun Temple",
-    "city": "Odisha",
-    "country": "India",
-    "region": "Asia"
-  },
-  {
-    "name": "Meenakshi Amman Temple",
-    "city": "Madurai",
-    "country": "India",
-    "region": "Asia"
-  },
-  {
-    "name": "Amer Fort",
+    "name": "Amer Fort (Amber Palace)",
     "city": "Jaipur",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "City Palace Jaipur",
+    "city": "Jaipur",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Jantar Mantar Jaipur",
+    "city": "Jaipur",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Mehrangarh Fort",
+    "city": "Jodhpur",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Umaid Bhawan Palace",
+    "city": "Jodhpur",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Jaisalmer Fort (Sonar Qila)",
+    "city": "Jaisalmer",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "City Palace Udaipur & Lake Pichola",
+    "city": "Udaipur",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Chittorgarh Fort",
+    "city": "Chittorgarh",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Ranakpur Jain Temple",
+    "city": "Ranakpur",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Chand Baori Stepwell",
+    "city": "Abhaneri",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Fatehpur Sikri & Buland Darwaza",
+    "city": "Agra",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Kashi Vishwanath Temple",
+    "city": "Varanasi",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Varanasi Ghats & Ganges River",
+    "city": "Varanasi",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Khajuraho Group of Monuments",
+    "city": "Khajuraho",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Sanchi Stupa",
+    "city": "Sanchi",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Gwalior Fort",
+    "city": "Gwalior",
     "country": "India",
     "region": "Asia"
   },
@@ -354,26 +558,188 @@
     "region": "Asia"
   },
   {
-    "name": "Humayun's Tomb",
-    "city": "Delhi",
+    "name": "Howrah Bridge",
+    "city": "Kolkata",
     "country": "India",
     "region": "Asia"
   },
   {
-    "name": "Mysore Palace",
-    "city": "Mysore",
+    "name": "Konark Sun Temple",
+    "city": "Puri / Konark",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Jagannath Temple",
+    "city": "Puri",
     "country": "India",
     "region": "Asia"
   },
   {
     "name": "Statue of Unity",
-    "city": "Gujarat",
+    "city": "Kevadia",
     "country": "India",
     "region": "Asia"
   },
   {
-    "name": "Ajanta and Ellora Caves",
-    "city": "Maharashtra",
+    "name": "Somnath Temple",
+    "city": "Prabhas Patan",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Dwarkadhish Temple",
+    "city": "Dwarka",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Sun Temple Modhera",
+    "city": "Modhera",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Rani ki Vav (Queen's Stepwell)",
+    "city": "Patan",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Charminar",
+    "city": "Hyderabad",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Golconda Fort",
+    "city": "Hyderabad",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Ramappa Temple",
+    "city": "Warangal",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Thousand Pillar Temple",
+    "city": "Warangal",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Warangal Fort",
+    "city": "Warangal",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Virupaksha Temple",
+    "city": "Hampi",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Stone Chariot & Vittala Temple",
+    "city": "Hampi",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Mysore Palace (Amba Vilas)",
+    "city": "Mysore",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Gol Gumbaz",
+    "city": "Bijapur",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Chennakeshava Temple Belur",
+    "city": "Belur",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Hoysaleswara Temple Halebidu",
+    "city": "Halebidu",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Brihadisvara Temple (Big Temple)",
+    "city": "Thanjavur",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Meenakshi Amman Temple",
+    "city": "Madurai",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Shore Temple & Pancha Rathas",
+    "city": "Mahabalipuram",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Ramanathaswamy Temple",
+    "city": "Rameswaram",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Padmanabhaswamy Temple",
+    "city": "Thiruvananthapuram",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Basilica of Bom Jesus",
+    "city": "Old Goa",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Tirumala Venkateswara Temple",
+    "city": "Tirupati",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Lepakshi Veerabhadra Temple",
+    "city": "Lepakshi",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Mahabodhi Temple",
+    "city": "Bodh Gaya",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Nalanda Mahavihara Ruins",
+    "city": "Nalanda",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Kamakhya Temple",
+    "city": "Guwahati",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "name": "Cellular Jail",
+    "city": "Port Blair",
     "country": "India",
     "region": "Asia"
   },
@@ -456,6 +822,24 @@
     "region": "Asia"
   },
   {
+    "name": "Gyeongbokgung Palace",
+    "city": "Seoul",
+    "country": "South Korea",
+    "region": "Asia"
+  },
+  {
+    "name": "N Seoul Tower",
+    "city": "Seoul",
+    "country": "South Korea",
+    "region": "Asia"
+  },
+  {
+    "name": "Taipei 101",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "region": "Asia"
+  },
+  {
     "name": "Angkor Wat",
     "city": "Siem Reap",
     "country": "Cambodia",
@@ -466,66 +850,6 @@
     "city": "Siem Reap",
     "country": "Cambodia",
     "region": "Asia"
-  },
-  {
-    "name": "Burj Khalifa",
-    "city": "Dubai",
-    "country": "United Arab Emirates",
-    "region": "Middle East"
-  },
-  {
-    "name": "Sheikh Zayed Grand Mosque",
-    "city": "Abu Dhabi",
-    "country": "United Arab Emirates",
-    "region": "Middle East"
-  },
-  {
-    "name": "Burj Al Arab",
-    "city": "Dubai",
-    "country": "United Arab Emirates",
-    "region": "Middle East"
-  },
-  {
-    "name": "Petra (The Treasury / Al-Khazneh)",
-    "city": "Ma'an",
-    "country": "Jordan",
-    "region": "Middle East"
-  },
-  {
-    "name": "Hagia Sophia",
-    "city": "Istanbul",
-    "country": "Turkey",
-    "region": "Middle East"
-  },
-  {
-    "name": "Blue Mosque (Sultan Ahmed Mosque)",
-    "city": "Istanbul",
-    "country": "Turkey",
-    "region": "Middle East"
-  },
-  {
-    "name": "Topkapi Palace",
-    "city": "Istanbul",
-    "country": "Turkey",
-    "region": "Middle East"
-  },
-  {
-    "name": "Cappadocia Fairy Chimneys",
-    "city": "Anatolia",
-    "country": "Turkey",
-    "region": "Middle East"
-  },
-  {
-    "name": "Western Wall",
-    "city": "Jerusalem",
-    "country": "Israel",
-    "region": "Middle East"
-  },
-  {
-    "name": "Dome of the Rock",
-    "city": "Jerusalem",
-    "country": "Middle East",
-    "region": "Middle East"
   },
   {
     "name": "Petronas Twin Towers",
@@ -576,6 +900,12 @@
     "region": "Asia"
   },
   {
+    "name": "Wat Phra Kaew (Temple of Emerald Buddha)",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "region": "Asia"
+  },
+  {
     "name": "Bagan Pagodas",
     "city": "Mandalay",
     "country": "Myanmar",
@@ -586,6 +916,102 @@
     "city": "Yangon",
     "country": "Myanmar",
     "region": "Asia"
+  },
+  {
+    "name": "Ha Long Bay",
+    "city": "Quang Ninh",
+    "country": "Vietnam",
+    "region": "Asia"
+  },
+  {
+    "name": "Sigiriya Ancient Rock Fortress",
+    "city": "Sigiriya",
+    "country": "Sri Lanka",
+    "region": "Asia"
+  },
+  {
+    "name": "Temple of the Sacred Tooth Relic",
+    "city": "Kandy",
+    "country": "Sri Lanka",
+    "region": "Asia"
+  },
+  {
+    "name": "Boudhanath Stupa",
+    "city": "Kathmandu",
+    "country": "Nepal",
+    "region": "Asia"
+  },
+  {
+    "name": "Tiger's Nest Monastery (Paro Taktsang)",
+    "city": "Paro",
+    "country": "Bhutan",
+    "region": "Asia"
+  },
+  {
+    "name": "Burj Khalifa",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "region": "Middle East"
+  },
+  {
+    "name": "Sheikh Zayed Grand Mosque",
+    "city": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "region": "Middle East"
+  },
+  {
+    "name": "Burj Al Arab",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "region": "Middle East"
+  },
+  {
+    "name": "Museum of the Future",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "region": "Middle East"
+  },
+  {
+    "name": "Petra (The Treasury / Al-Khazneh)",
+    "city": "Ma'an",
+    "country": "Jordan",
+    "region": "Middle East"
+  },
+  {
+    "name": "Hagia Sophia",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "region": "Middle East"
+  },
+  {
+    "name": "Blue Mosque (Sultan Ahmed Mosque)",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "region": "Middle East"
+  },
+  {
+    "name": "Topkapi Palace",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "region": "Middle East"
+  },
+  {
+    "name": "Cappadocia Fairy Chimneys",
+    "city": "Anatolia",
+    "country": "Turkey",
+    "region": "Middle East"
+  },
+  {
+    "name": "Western Wall",
+    "city": "Jerusalem",
+    "country": "Israel",
+    "region": "Middle East"
+  },
+  {
+    "name": "Dome of the Rock",
+    "city": "Jerusalem",
+    "country": "Israel",
+    "region": "Middle East"
   },
   {
     "name": "Statue of Liberty",
@@ -601,6 +1027,24 @@
   },
   {
     "name": "Empire State Building",
+    "city": "New York",
+    "country": "United States",
+    "region": "North America"
+  },
+  {
+    "name": "One World Trade Center",
+    "city": "New York",
+    "country": "United States",
+    "region": "North America"
+  },
+  {
+    "name": "Brooklyn Bridge",
+    "city": "New York",
+    "country": "United States",
+    "region": "North America"
+  },
+  {
+    "name": "Times Square",
     "city": "New York",
     "country": "United States",
     "region": "North America"
@@ -624,7 +1068,25 @@
     "region": "North America"
   },
   {
+    "name": "Lincoln Memorial",
+    "city": "Washington, D.C.",
+    "country": "United States",
+    "region": "North America"
+  },
+  {
     "name": "Grand Canyon",
+    "city": "Arizona",
+    "country": "United States",
+    "region": "North America"
+  },
+  {
+    "name": "Antelope Canyon",
+    "city": "Arizona",
+    "country": "United States",
+    "region": "North America"
+  },
+  {
+    "name": "Horseshoe Bend",
     "city": "Arizona",
     "country": "United States",
     "region": "North America"
@@ -632,24 +1094,6 @@
   {
     "name": "Space Needle",
     "city": "Seattle",
-    "country": "United States",
-    "region": "North America"
-  },
-  {
-    "name": "Lincoln Memorial",
-    "city": "Washington, D.C.",
-    "country": "United States",
-    "region": "North America"
-  },
-  {
-    "name": "Times Square",
-    "city": "New York",
-    "country": "United States",
-    "region": "North America"
-  },
-  {
-    "name": "Brooklyn Bridge",
-    "city": "New York",
     "country": "United States",
     "region": "North America"
   },
@@ -696,7 +1140,13 @@
     "region": "North America"
   },
   {
-    "name": "Banff National Park / Lake Louise",
+    "name": "Banff National Park & Lake Louise",
+    "city": "Alberta",
+    "country": "Canada",
+    "region": "North America"
+  },
+  {
+    "name": "Moraine Lake",
     "city": "Alberta",
     "country": "Canada",
     "region": "North America"
@@ -744,6 +1194,18 @@
     "region": "South America"
   },
   {
+    "name": "Salar de Uyuni Salt Flats",
+    "city": "Uyuni",
+    "country": "Bolivia",
+    "region": "South America"
+  },
+  {
+    "name": "Perito Moreno Glacier",
+    "city": "Santa Cruz",
+    "country": "Argentina",
+    "region": "South America"
+  },
+  {
     "name": "Great Pyramids of Giza",
     "city": "Cairo",
     "country": "Egypt",
@@ -780,6 +1242,12 @@
     "region": "Africa"
   },
   {
+    "name": "Cape of Good Hope",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "region": "Africa"
+  },
+  {
     "name": "Victoria Falls",
     "city": "Livingstone",
     "country": "Zambia / Zimbabwe",
@@ -788,12 +1256,6 @@
   {
     "name": "Mount Kilimanjaro",
     "city": "Kilimanjaro",
-    "country": "Tanzania",
-    "region": "Africa"
-  },
-  {
-    "name": "Serengeti National Park",
-    "city": "Mara",
     "country": "Tanzania",
     "region": "Africa"
   },
@@ -834,8 +1296,20 @@
     "region": "Oceania"
   },
   {
+    "name": "Twelve Apostles",
+    "city": "Victoria",
+    "country": "Australia",
+    "region": "Oceania"
+  },
+  {
     "name": "Milford Sound",
     "city": "Fiordland",
+    "country": "New Zealand",
+    "region": "Oceania"
+  },
+  {
+    "name": "Hobbiton Movie Set",
+    "city": "Matamata",
     "country": "New Zealand",
     "region": "Oceania"
   }

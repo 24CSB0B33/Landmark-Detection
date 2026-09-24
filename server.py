@@ -22,9 +22,6 @@ DIST_DIR = os.path.join(BASE_DIR, "frontend", "dist")
 CLIP_DIR = os.path.join(MODELS_DIR, "clip")
 os.makedirs(SAMPLES_DIR, exist_ok=True)
 
-# ─────────────────────────────────────────────────────────────
-# 1. CLIP Semantic Engine  (primary — most accurate)
-# ─────────────────────────────────────────────────────────────
 CLIP_MODEL_PATH = os.path.join(CLIP_DIR, "model_quantized.onnx")
 CLIP_TOKENIZER_PATH = os.path.join(CLIP_DIR, "tokenizer.json")
 CLIP_EMBEDDINGS_PATH = os.path.join(CLIP_DIR, "landmarks_embeddings.npy")
@@ -51,9 +48,6 @@ if all(os.path.exists(p) for p in [CLIP_MODEL_PATH, CLIP_TOKENIZER_PATH, CLIP_EM
 else:
     print("[Server] CLIP model files not found — run build_embeddings.py to generate them.")
 
-# ─────────────────────────────────────────────────────────────
-# 2. Regional TFLite Models (Google Landmark Recognition)
-# ─────────────────────────────────────────────────────────────
 REGIONS = ["asia", "europe", "north_america"]
 tflite_models = {}
 total_classes = 0
@@ -76,9 +70,7 @@ for reg in REGIONS:
         total_classes += len(label_dict)
         print(f"[Server] Loaded {reg.replace('_',' ').title()} model ({len(label_dict):,} classes)")
 
-# ─────────────────────────────────────────────────────────────
-# 3. Custom Notebook Model  (Model.keras)
-# ─────────────────────────────────────────────────────────────
+# method 1:
 custom_model = None
 custom_classes = None
 custom_labels = {}
@@ -99,9 +91,7 @@ if os.path.exists(CUSTOM_MODEL_PATH) and os.path.exists(CUSTOM_CLASSES_PATH):
     except Exception as e:
         print(f"[Server] Note: Custom model could not be loaded: {e}")
 
-# ─────────────────────────────────────────────────────────────
-# 4. Warm-up Inferences
-# ─────────────────────────────────────────────────────────────
+# 
 print("[Server] Running warm-up inferences...")
 dummy_321 = np.zeros((1, 321, 321, 3), dtype=np.uint8)
 for reg, m_info in tflite_models.items():
@@ -124,9 +114,7 @@ if clip_session is not None:
 print("[Server] All models warm and ready.")
 
 
-# ─────────────────────────────────────────────────────────────
-# Inference helpers
-# ─────────────────────────────────────────────────────────────
+#
 
 def preprocess_clip(pil_img: Image.Image) -> np.ndarray:
     """Resize and normalise an image to CLIP's (1, 3, 224, 224) tensor."""

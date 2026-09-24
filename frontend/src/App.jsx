@@ -1,25 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 
-// Engine definitions
-const ENGINES = [
-  {
-    id: 'clip',
-    label: 'CLIP Semantic (Recommended)',
-    description: 'Zero-shot recognition — works for any world landmark',
-  },
-  {
-    id: 'regional',
-    label: 'Google Landmark DB',
-    description: 'Asia, Europe & North America — 297,000+ categories',
-  },
-  {
-    id: 'custom',
-    label: 'Custom Model.keras',
-    description: 'Original notebook VGG19 model (3,539 classes)',
-  },
-];
-
 export default function App() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [previewUrl, setPreviewUrl]     = useState(null);
@@ -30,7 +11,6 @@ export default function App() {
   const [results, setResults]           = useState(null);
   const [samples, setSamples]           = useState([]);
   const [serverStatus, setServerStatus] = useState('checking');
-  const [engine, setEngine]             = useState('clip');
   const [modelMeta, setModelMeta]       = useState(null);
 
   const fileInputRef = useRef(null);
@@ -99,7 +79,7 @@ export default function App() {
     setIsLoading(true); setError(null);
     const formData = new FormData();
     formData.append('image', selectedFile);
-    formData.append('engine', engine);
+    formData.append('engine', 'clip');
     try {
       const res = await fetch('/api/predict', { method: 'POST', body: formData });
       const data = await res.json();
@@ -112,12 +92,7 @@ export default function App() {
     }
   };
 
-  const badgeLabel = () => {
-    if (serverStatus !== 'online') return serverStatus === 'offline' ? 'Backend Offline' : 'Connecting...';
-    if (engine === 'clip')     return `CLIP Engine · ${(modelMeta?.clip_landmarks_count || 140)} Landmarks`;
-    if (engine === 'regional') return `Google DB · ${(modelMeta?.global_classes_count || 297509).toLocaleString()} Classes`;
-    return `Custom Model · ${(modelMeta?.custom_classes_count || 3539).toLocaleString()} Classes`;
-  };
+  const landmarkCount = modelMeta?.clip_landmarks_count || 219;
 
   return (
     <div className="app-container">
@@ -126,34 +101,15 @@ export default function App() {
         <div className="header-badge-row">
           <div className="model-badge">
             <span className={`status-dot ${serverStatus === 'offline' ? 'offline' : ''}`} />
-            {badgeLabel()}
+            {serverStatus === 'offline' ? 'Backend Offline' : `CLIP Semantic Engine · ${landmarkCount} Landmarks`}
           </div>
           <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-            CLIP · VGG19 · TFLite
+            Zero-Shot Vision AI
           </span>
         </div>
         <h1 className="app-title">Landmark Detection</h1>
         <p className="app-subtitle">
-          Upload any architectural or monument photo — the app identifies the landmark and shows
-          percentage confidence probabilities.
-        </p>
-
-        {/* Engine Switcher */}
-        <div className="engine-switcher">
-          {ENGINES.map(e => (
-            <button
-              key={e.id}
-              type="button"
-              className={`engine-tab ${engine === e.id ? 'active' : ''}`}
-              title={e.description}
-              onClick={() => { setEngine(e.id); setResults(null); }}
-            >
-              {e.label}
-            </button>
-          ))}
-        </div>
-        <p className="engine-desc">
-          {ENGINES.find(e => e.id === engine)?.description}
+          Upload any architectural or monument photo — the AI identifies the landmark with city, country, and confidence probability.
         </p>
       </header>
 
@@ -190,7 +146,7 @@ export default function App() {
               <p className="dropzone-prompt">
                 Drag &amp; drop your photo here, or <span className="dropzone-browse">browse</span>
               </p>
-              <p className="dropzone-hint">JPEG, PNG, WebP — any world landmark</p>
+              <p className="dropzone-hint">JPEG, PNG, WebP — Indian and world landmarks</p>
             </div>
           ) : (
             <>
@@ -290,7 +246,7 @@ export default function App() {
                 marginBottom: 16
               }} />
               <div className="empty-title">Running Analysis</div>
-              <p className="empty-desc">Matching against global landmark database...</p>
+              <p className="empty-desc">Matching against {landmarkCount} world landmarks...</p>
             </div>
           ) : (
             <>
@@ -299,7 +255,7 @@ export default function App() {
                 <div className="best-match-header">
                   <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                     <span className="eyebrow-tag">Best Match</span>
-                    {results.best_match.region && (
+                    {results.best_match?.region && (
                       <span className="region-tag">{results.best_match.region}</span>
                     )}
                   </div>
@@ -310,24 +266,21 @@ export default function App() {
 
                 <div className="best-match-body">
                   <div className="best-match-info">
-                    <h2 className="best-match-name">{results.best_match.name}</h2>
-                    {/* Show city/country for CLIP results */}
-                    {results.best_match.city && (
+                    <h2 className="best-match-name">{results.best_match?.name}</h2>
+                    {results.best_match?.city && (
                       <div className="best-match-location">
                         📍 {results.best_match.city}{results.best_match.country ? `, ${results.best_match.country}` : ''}
                       </div>
                     )}
                     <div className="best-match-id">
-                      {results.engine === 'clip'
-                        ? `Landmark #${results.best_match.landmark_id + 1} of ${results.model_info.match(/\d+/)?.[0] || ''}`
-                        : `Landmark Class #${results.best_match.landmark_id}`}
+                      Verified Landmark #{results.best_match?.landmark_id + 1}
                     </div>
                   </div>
 
                   {/* Big Percentage */}
                   <div className="percentage-box">
                     <div className="percentage-number">
-                      {results.best_match.confidence_formatted}
+                      {results.best_match?.confidence_formatted}
                     </div>
                     <div className="percentage-label">Confidence</div>
                   </div>
@@ -336,16 +289,16 @@ export default function App() {
                 {/* Confidence Bar */}
                 <div className="progress-track">
                   <div className="progress-fill"
-                    style={{ width: `${Math.min(100, Math.max(2, results.best_match.probability))}%` }} />
+                    style={{ width: `${Math.min(100, Math.max(2, results.best_match?.probability || 0))}%` }} />
                 </div>
               </div>
 
               {/* Candidate List */}
               {results.top_matches?.length > 1 && (
                 <>
-                  <div className="candidates-title">Candidate Predictions</div>
+                  <div className="candidates-title">Runner-up Candidates</div>
                   <div className="candidates-list">
-                    {results.top_matches.map(item => (
+                    {results.top_matches.slice(1).map(item => (
                       <div key={item.rank} className="candidate-item">
                         <span className="candidate-rank">#{item.rank}</span>
                         <div className="candidate-details">
@@ -354,7 +307,7 @@ export default function App() {
                             {item.region && <span className="region-tag">{item.region}</span>}
                           </div>
                           <div className="candidate-id">
-                            {item.city ? `${item.city}${item.country ? ', ' + item.country : ''}` : `ID: ${item.landmark_id}`}
+                            {item.city ? `${item.city}${item.country ? ', ' + item.country : ''}` : `Landmark #${item.landmark_id + 1}`}
                           </div>
                         </div>
                         <div className="candidate-metric">
