@@ -1,6 +1,6 @@
 # Landmark Detection Web Application
 
-A clean, responsive, stutter-free web application for classifying architectural landmarks and monuments using a trained Deep Learning model (`Model.keras` / VGG19) across 3,539 categories.
+A clean, responsive, stutter-free web application for classifying architectural landmarks and monuments using a trained Deep Learning model (`Model.keras` / VGG19) across 319 categories.
 
 ## Features
 
